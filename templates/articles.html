@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+
+<h1 style="">Articles</h1>
+
+{%for art in articles%}<p><a href="article/{{art[0]}}/{{art[1]}}">{{art[2]}}</a></p>
+{%endfor%}
+
+</body>
+</html>
